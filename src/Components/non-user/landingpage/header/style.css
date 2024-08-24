@@ -1,0 +1,209 @@
+use from index.css
+
+.container{
+    /* background-color: var(--card-color); */
+    /* position: fixed; */
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+    box-shadow: 0px .5px 2px var(--txt-color);
+    padding: 15px 80px;
+}
+.header_logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap:-10px; */
+}
+
+.header_logo .header_Imglogo img{
+    width: 80px;
+    height: 80px;
+}
+.header_logo .text{
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    color: var(--txt2-color);
+}
+
+.header_navbar #nav_nab{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+}
+.header_navbar #nav_nab a:hover{
+    color: var(--txt-color);
+}
+.header_navbar #nav_nab a:hover::after{    
+        content: "";
+        position: absolute;
+        width: 40%;
+        height: 2px;
+        background-color: var(--txt-color);
+        left: 0px;
+        bottom: -10px;      
+}
+
+.header_btn #btn_main{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+#btn_main .login_btn{
+    background-color: var(--background-color);
+    color: var(--txt2-color);
+    border-color: var(--txt2-color);
+}
+#btn_main .login_btn:hover {
+    border-color:var(--background-color);
+  }
+
+#btn_main .reg_btn{
+    background-color: var(--txt2-color);
+    color: var(--background-color);
+}
+#mobile i{
+    color: var(--txt2-color);
+    cursor: pointer;
+}
+#mobile{
+    display: none;
+}
+@media screen and (max-width: 1100px) {
+    .header{
+        padding: 10px 15px;
+    }
+    .header_nav .header_navbar #nav_nab,
+    .header_btn #btn_main{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 40px 0px 0px 40px;
+    }
+    .header_nav .header_navbar #nav_nab{
+        position: fixed;
+        top: 68px;
+        right: -450px;
+        width: 400px;
+        height: 100dvh;
+        background: var(--txt2-color);
+        color: var(--background-color);
+        box-shadow: 0px 2px 4px var(--txt-color);
+      
+    }
+    .header_nav .header_navbar #nav_nab.active,
+    .header_btn #btn_main.active{
+        right: 0;
+    }
+
+    .header_btn #btn_main{
+        position: fixed;
+        bottom: 150px;
+        right: -450px;
+        width: 400px;
+        gap: 20px;
+    }
+    #mobile{
+        display: block;
+    }
+    #mobile i{
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .header_navbar #nav_nab a{
+        margin-bottom: 3px;
+        color: var(--background-color);
+    }
+    .btn_main .reg_btn{
+        background-color: var(--background-color);
+        color: var(--txt2-color);
+        width: 200px;
+        text-align: center;
+        font-size: 1em;
+    }
+    /* #btn_main .reg_btn:hover {
+        border-color:var(--background-color);
+      } */
+    .header_logo .header_Imglogo img{
+        width: 60px;
+        height: 60px;
+    }
+    .header_logo .text{
+        font-size: 1.5em;
+        letter-spacing: 1px;
+        line-height: 1.1;
+        color: var(--txt2-color);
+    }
+}
+@media screen and (max-width:588px) {
+    .header{
+        padding: 10px 15px 5px 15px;
+    }
+    .header_nav .header_navbar #nav_nab,
+    .header_btn #btn_main{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 40px 0px 0px 20px;
+    }
+    .header_nav .header_navbar #nav_nab{
+        position: fixed;
+        top: 64px;
+        right: -450px;
+        width: 200px;
+        height: 100dvh;
+        background: var(--txt2-color);
+        color: var(--background-color);
+        box-shadow: 0px 2px 4px var(--txt-color);
+      
+    }
+    .header_nav .header_navbar #nav_nab.active,
+    .header_btn #btn_main.active{
+        right: 0;
+    }
+
+    .header_btn #btn_main{
+        position: fixed;
+        bottom: 150px;
+        right: -450px;
+        width: 200px;
+        gap: 20px;
+    }
+    #mobile i{
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .header_navbar #nav_nab a{
+        margin-bottom: 35px;
+        color: var(--background-color);
+        font-size: .8em;
+        font-weight: 400;
+    }
+    #btn_main .reg_btn{
+        background-color: var(--background-color);
+        color: var(--txt2-color);
+        width: 100px;
+        text-align: center;
+        font-size: .8em;
+        font-weight: 600;
+    }
+    #btn_main .reg_btn:hover {
+        border-color:var(--background-color);
+      }
+    #btn_main .login_btn{
+        width: 100px;
+        text-align: center;
+        font-size: .8em;
+        font-weight: 600;
+    }
+    
+
+    
+}
