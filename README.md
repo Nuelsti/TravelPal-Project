@@ -11,8 +11,8 @@ API- Google Maps API, Algolia...
 
 I am currently working on the frontend ... 
 # Links to the site:
-# Github: [https://github.com/Nuelsti/TravelPal-Project.git]
-# Live: [https://travel-pal-project.vercel.app/]
+Github: [https://github.com/Nuelsti/TravelPal-Project.git]
+Live: [https://travel-pal-project.vercel.app/]
 
 Best of luck 
 
