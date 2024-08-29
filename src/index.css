@@ -2,7 +2,7 @@
   --main-font: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   --background-color: hsl(0, 0%, 100%);
   --txt-color: hsl(0, 0%, 0%);
-  --txt2-color: #4567b7;
+  --txt2-color: hsl(210, 85%, 18%);
   --color-scheme: light dark;
   --card-color: hsl(300, 50%, 74%);
 }
